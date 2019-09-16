@@ -8,12 +8,9 @@ class Anagram
     @word = word
   end 
   
-  def match(words)
-    ans = []
-    wordcomp = @word.sort.split("")
-    word_arr = words.split(" ")
-    word_arr.detect do |wrd|
-      if wordcomp == wrd.sort.split("")
+  def match(word_array)
+    word_arr.select do |word|
+      if word_array.split("").sort == @word.split("").sort
         wrd << ans
       end 
     end
