@@ -11,7 +11,7 @@ class Anagram
   def match(words)
     word_arr = words.split(" ")
     word_arr.each do |letter|
-      @word.find 
+      letter
     
 
 end 
